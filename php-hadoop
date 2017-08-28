@@ -1,0 +1,13 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__ . '/vendor/autoload.php';
+
+use CViniciusSDias\PHPHadoop\Command\{GenerateFakeData, Mapper, Reducer};
+use Symfony\Component\Console\Application;
+
+$app = new Application();
+$app->add(new GenerateFakeData());
+$app->add(new Mapper());
+$app->add(new Reducer());
+$app->run();
