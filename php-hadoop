@@ -3,11 +3,11 @@
 
 require __DIR__ . '/vendor/autoload.php';
 
-use CViniciusSDias\PHPHadoop\Command\{GenerateFakeData, Mapper, Reducer};
+use CViniciusSDias\PHPHadoop\Command\{GenerateFakeData, IdadesMapper, IdadesReducer};
 use Symfony\Component\Console\Application;
 
 $app = new Application('PHP Hadoop', '@package_version@');
 $app->add(new GenerateFakeData());
-$app->add(new Mapper());
-$app->add(new Reducer());
+$app->add(new IdadesMapper());
+$app->add(new IdadesReducer());
 $app->run();
