@@ -11,6 +11,6 @@
     ],
     "git-version": "package_version",
     "main": "php-hadoop",
-    "output": "php-hadoop.phar",
+    "output": "bin/php-hadoop.phar",
     "stub": true
 }
